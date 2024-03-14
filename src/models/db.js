@@ -14,7 +14,7 @@ async function connect() {
 
 async function findALL(collection) {
     const db = await connect();
-    return db.collection(collection).findALL().toArray();
+    return db.collection(collection).find().toArray();
 }
 
 module.exports = { findALL}
